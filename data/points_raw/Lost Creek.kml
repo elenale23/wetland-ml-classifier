@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<name>Lost Creek</name>
+<Style id="controlPoint">
+<IconStyle>
+<scale>0.5</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon49.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle><color>ff0000ff</color>
+<colorMode>normal</colorMode>
+<scale>0.6</scale>
+</LabelStyle>
+<BalloonStyle>
+<text><![CDATA[
+Point: <b><font color="#ff0000">$[name]</font></b>
+<br/>
+Code: $[description]
+]]></text>
+</BalloonStyle>
+</Style>
+<Style id="standardPoint">
+<IconStyle>
+<scale>0.5</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle><color>ff0000ff</color>
+<colorMode>normal</colorMode>
+<scale>0.6</scale>
+</LabelStyle>
+<BalloonStyle>
+<text><![CDATA[
+Point: <b><font color="#ff0000">$[name]</font></b>
+<br/>
+Code: $[description]
+]]></text>
+</BalloonStyle>
+</Style>
+<Placemark>
+<name>base</name>
+<description><font color="#0000ff">base</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718068.397mN</dd><dd>302367.917mE</dd><dd>435.732mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85240179586,51.578979233744,420.86151081537</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10000</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718066.651mN</dd><dd>302364.383mE</dd><dd>435.848mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85245175081,51.578962316853,420.9780827472</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10001</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718059.188mN</dd><dd>302376.813mE</dd><dd>435.004mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85226838482,51.578899654649,420.13331289962</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10002</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718047.614mN</dd><dd>302389.454mE</dd><dd>434.258mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85207967348,51.578800138927,419.3876026962</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10003</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718040.273mN</dd><dd>302394.099mE</dd><dd>433.864mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85200859779,51.578735841085,418.99390889239</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10004</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718035.465mN</dd><dd>302406.734mE</dd><dd>433.129mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85182377075,51.578697096505,418.25845894776</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10005</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718026.889mN</dd><dd>302415.068mE</dd><dd>432.642mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85169882947,51.578622996847,417.77165284008</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10006</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718016.620mN</dd><dd>302426.236mE</dd><dd>431.947mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85153208693,51.578534691056,417.07687542029</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10007</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718006.862mN</dd><dd>302435.279mE</dd><dd>431.440mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85139625591,51.578450227387,416.56964337174</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10008</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5717995.533mN</dd><dd>302445.852mE</dd><dd>430.958mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85123748712,51.578352195131,416.08845265023</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10009</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5717983.528mN</dd><dd>302455.713mE</dd><dd>430.798mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85108860965,51.578247844269,415.92837251537</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10010</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5717970.572mN</dd><dd>302466.847mE</dd><dd>430.792mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85092084607,51.578135388886,415.92256972939</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10011</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5717965.435mN</dd><dd>302459.125mE</dd><dd>430.485mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85102925526,51.578086550544,415.61538999341</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10012</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5717971.760mN</dd><dd>302459.869mE</dd><dd>430.889mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85102209166,51.578143613415,416.01931469794</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10013</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5717985.074mN</dd><dd>302449.438mE</dd><dd>431.023mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85117992517,51.57825952384,416.15302026458</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10014</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5717984.781mN</dd><dd>302443.102mE</dd><dd>430.945mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85127108386,51.578254670523,416.07554695942</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10015</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5717997.571mN</dd><dd>302432.102mE</dd><dd>431.297mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85143681658,51.578365678103,416.42708999943</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10016</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718013.553mN</dd><dd>302417.133mE</dd><dd>432.183mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85166157096,51.578503962773,417.3132274393</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10017</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718022.589mN</dd><dd>302411.930mE</dd><dd>432.727mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85174163612,51.578583285639,417.8572565373</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10018</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718026.228mN</dd><dd>302401.586mE</dd><dd>432.789mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85189277474,51.57861233847,417.91919348761</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10019</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718035.973mN</dd><dd>302391.797mE</dd><dd>433.396mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85203936332,51.578696425356,418.5261645196</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>10020</name>
+<description><font color="#0000ff">Upland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5718071.510mN</dd><dd>302367.951mE</dd><dd>435.449mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.85240305421,51.579007199569,420.57836682908</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>base-tumtum</name>
+<description><font color="#0000ff">base</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744642.347mN</dd><dd>342162.464mE</dd><dd>578.842mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29063623225,51.830275730188,564.64519726047</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1000</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744646.672mN</dd><dd>342159.607mE</dd><dd>579.106mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29067964302,51.830313782747,564.90954641812</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1001</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744644.942mN</dd><dd>342151.541mE</dd><dd>578.911mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.2907958114,51.830295960181,564.71357380226</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1002</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744650.243mN</dd><dd>342151.140mE</dd><dd>578.921mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29080403556,51.830343476114,564.72381013446</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1003</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744656.090mN</dd><dd>342148.271mE</dd><dd>578.893mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29084830947,51.83039519304,564.6963266721</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1004</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744661.296mN</dd><dd>342148.478mE</dd><dd>578.590mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29084767468,51.830442023693,564.39314236864</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1005</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744667.852mN</dd><dd>342148.965mE</dd><dd>578.425mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29084360854,51.830501061912,564.22884621378</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1006</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744670.905mN</dd><dd>342143.422mE</dd><dd>578.618mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29092536756,51.830526923344,564.4214203665</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1007</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744677.503mN</dd><dd>342139.303mE</dd><dd>578.574mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29098810415,51.830585036098,564.3774796715</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1008</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744682.304mN</dd><dd>342139.765mE</dd><dd>578.654mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29098359645,51.830628297317,564.4576674141</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1009</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744681.083mN</dd><dd>342145.773mE</dd><dd>578.600mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29089592307,51.830619021569,564.40329978429</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1010</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744675.788mN</dd><dd>342150.287mE</dd><dd>578.690mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29082805108,51.830572725578,564.49355713651</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1011</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744676.992mN</dd><dd>342154.149mE</dd><dd>578.976mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29077260118,51.830584640113,564.7792022042</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1012</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744681.243mN</dd><dd>342156.257mE</dd><dd>578.897mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29074397891,51.830623421096,564.70073201694</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1013</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744678.912mN</dd><dd>342158.809mE</dd><dd>578.824mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29070591305,51.830603206551,564.62750272918</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1014</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744679.637mN</dd><dd>342162.648mE</dd><dd>578.969mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29065058104,51.830610800631,564.77312971372</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1015</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744677.191mN</dd><dd>342166.394mE</dd><dd>578.657mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29059514213,51.830589886384,564.4606854571</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1016</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744674.216mN</dd><dd>342168.114mE</dd><dd>578.645mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29056884291,51.830563644475,564.44857849274</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1017</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744672.715mN</dd><dd>342171.664mE</dd><dd>578.667mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.2905166839,51.83055116423,564.47113256156</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1018</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744668.674mN</dd><dd>342174.773mE</dd><dd>578.624mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29046975889,51.830515732844,564.42787452228</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1019</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744665.336mN</dd><dd>342176.211mE</dd><dd>578.860mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29044738075,51.830486149585,564.66369909048</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1020</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744658.783mN</dd><dd>342175.169mE</dd><dd>578.902mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29045951173,51.830426982967,564.70512965415</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1021</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744650.361mN</dd><dd>342174.387mE</dd><dd>578.871mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29046701315,51.830351101448,564.67416850012</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>1022</name>
+<description><font color="#0000ff">Wetland-Point</font><font color="#000000"><dl><dt>Grid:</dt><dd>5744643.132mN</dd><dd>342176.444mE</dd><dd>578.851mEl</dd></dl></font></description>
+<styleUrl>#standardPoint</styleUrl>
+<Point>
+<coordinates>-119.29043388538,51.830286732304,564.65467576589</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
+
