@@ -1,3 +1,5 @@
+
+
 library(sf)
 library(terra)
 library(dplyr)
@@ -48,14 +50,24 @@ unique(points_all_cleaned$Code)
 points_all_cleaned <- points_all_cleaned %>%
   filter(Code != "Wetland-Polygon")
 
+# Drop ZM dimension 
 points_all_cleaned <- st_zm(points_all_cleaned, what = "ZM")
 
 # I want to know the total number of points by site and class
 summary <- points_all_cleaned %>%
   group_by(Site, Code) %>%
   summarise(count = n(), .groups = "drop")
+print(summary)
+
+# Clearly, there is a class imbalance issue, with more wetland points than open water and upland points. Number of points between sites are also unequal. 
+# Because of this, I will manually digitize more "ground-truth" points to train open water and upland areas. 
 
 # Save point files
-save(points_all_cleaned, file = "/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/outputs/01_cleaneddata/points_all_cleaned.RData")
+save(points_all_cleaned, file = "/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/outputs/01_cleaneddata/points_all_cleaned.shp")
 write_xlsx(points_all_cleaned, "/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/outputs/01_cleaneddata/points_all_cleaned.xlsx")
 
+# Set crs to NAD83 / UTM Zone 11
+points_all_cleaned <- st_set_crs(points_all_cleaned, "EPSG:2955")
+crs(points_all_cleaned)
+
+st_write(points_all_cleaned, "/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/outputs/01_cleaneddata/points_all_cleaned.shp")
