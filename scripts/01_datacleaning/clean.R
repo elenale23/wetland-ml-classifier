@@ -1,5 +1,4 @@
 
-
 library(sf)
 library(terra)
 library(dplyr)
@@ -62,12 +61,10 @@ print(summary)
 # Clearly, there is a class imbalance issue, with more wetland points than open water and upland points. Number of points between sites are also unequal. 
 # Because of this, I will manually digitize more "ground-truth" points to train open water and upland areas. 
 
-# Save point files
-save(points_all_cleaned, file = "/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/outputs/01_cleaneddata/points_all_cleaned.shp")
-write_xlsx(points_all_cleaned, "/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/outputs/01_cleaneddata/points_all_cleaned.xlsx")
-
-# Set crs to NAD83 / UTM Zone 11
+# But first, set crs to NAD83 / UTM Zone 11
 points_all_cleaned <- st_set_crs(points_all_cleaned, "EPSG:2955")
 crs(points_all_cleaned)
 
+# Write shp file
 st_write(points_all_cleaned, "/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/outputs/01_cleaneddata/points_all_cleaned.shp")
+
