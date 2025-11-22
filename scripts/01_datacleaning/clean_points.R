@@ -4,6 +4,7 @@ library(terra)
 library(dplyr)
 library(writexl)
 
+## ---- Cleaning raw data points ----
 # Read in wetland points as shapefiles 
 points_cook <- read_sf("/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/data/points_raw/Cook.shp")
 points_goose <- read_sf("/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/data/points_raw/Goose.shp")
@@ -62,9 +63,54 @@ print(summary)
 # Because of this, I will manually digitize more "ground-truth" points to train open water and upland areas. 
 
 # But first, set crs to NAD83 / UTM Zone 11
-points_all_cleaned <- st_set_crs(points_all_cleaned, "EPSG:2955")
-crs(points_all_cleaned)
+points_all_cleaned <- st_set_crs(points_all_cleaned, 32611)
+crs(points_all_cleaned) 
 
 # Write shp file
 st_write(points_all_cleaned, "/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/outputs/01_cleaneddata/points_all_cleaned.shp")
+
+## ---- Load additional points from manual digitization ----
+
+added_points_cook_water <- read_sf("/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/data/points_digitized/openwater_cook.shp")
+added_points_cook_upland <- read_sf("/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/data/points_digitized/upland_cook.shp")
+added_points_tumtum_water <- read_sf("/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/data/points_digitized/tumtum_openwater_points5.shp")
+added_points_tumtum_upland <- read_sf("/Users/nhile/Documents/WetlandModel/wetland-ml-classifier/data/points_digitized/tumtum_upland_points2.shp")
+
+# Combine files
+added_points_combined <- rbind(added_points_cook_upland, added_points_cook_water, added_points_tumtum_upland, added_points_tumtum_water)
+
+# Reproject original points to WGS84/UTM11
+transformed_allpoints <- st_transform(points_all_cleaned, crs = 32611)
+crs(transformed_allpoints)
+
+# Combine raw and added data points
+raw_and_added <- rbind(points_all_cleaned, added_points_combined)
+raw_and_added <- raw_and_added %>% arrange(Site) # Sort by site
+
+# Rename columns and classes
+names(raw_and_added)[names(raw_and_added) == "Site"] <- "site"
+names(raw_and_added)[names(raw_and_added) == "Code"] <- "class"
+names(raw_and_added)[names(raw_and_added) == "Northing"] <- "northing"
+names(raw_and_added)[names(raw_and_added) == "Easting"] <- "easting"
+
+raw_and_added <- raw_and_added %>%
+  mutate(class = case_when(
+    class %in% c("Wetland-Point") ~ "wetland",
+    class %in% c("Open Water-Point") ~ "open_water",
+    class %in% c("Upland-Point") ~ "upland"
+  ))
+
+raw_and_added <- raw_and_added %>%
+  mutate(site = case_when(
+         site %in% c("Cook") ~ "cook",
+         site %in% c("Goose") ~ "goose",
+         site %in% c("LostCreek") ~ "lost_creek",
+         site %in% c("Pyramid") ~ "pyramid",
+         site %in% c("TumTum") ~ "tum_tum"
+         ))
+
+summary_1 <- raw_and_added %>% ## this is a data frame with original field-collected points, and manually digitized points for Cook and Tumtum's open water and upland classes
+  group_by(site, class) %>%
+  summarise(count = n(), .groups = "drop")
+print(summary_1) # open_water 152, upland 194, wetland 257
 
