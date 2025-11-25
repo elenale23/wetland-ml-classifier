@@ -7,7 +7,7 @@ Some fish species, such as the juvenile Coho salmon, utilize wetlands in the Nor
 
 As a first step towards understanding connectivity, here, we demonstrate the acquisition, preparation, and processing of satellite imagery to observe the spatial and seasonal inundation patterns in North Thompson wetlands. A Random Forest classifier is trained using ground-truth data collected from four wetland sites along the North Thompson River mainstem (Cook, Pyramid, Goose, Tum Tum) from July 7-11, 2025 using a Trimble R12i system. Additional training data were later added by desktop digitization. Model predictors include the Blue, Red, Green, and NIR bands from PlanetScope imagery acquired as closely to fieldwork dates and with as little cloud coverage as possible. Due to license requirements of PlanetScope, the imagery folder has been omitted from the public repository. All other data requirements, including ground truth and additional desktop-digitized data, have been included. 
 
-Given that this model currenly serves as a preliminary proof of concept for the application of geospatial techniques to wetland and fish habitat quantification, more work is needed to improve the classification accuracy. In the coming weeks, I will improve hyperparameter tuning, incorporate DEM metrics as a model feature, and conduct a multi-spatial and temporal extrapolation of the model.
+Given that this model currently serves as a preliminary proof of concept for the application of geospatial techniques to wetland and fish habitat quantification, more work is needed to improve the classification accuracy. Improved hyperparameter tuning, incorporation of DEM metrics, and spatial and temporal model extrapolations will be conducted in the near future.
 
 
 
