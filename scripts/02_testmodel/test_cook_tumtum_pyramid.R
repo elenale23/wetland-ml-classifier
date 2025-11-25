@@ -215,6 +215,5 @@ aucs
 # Calculate multiclass AUC. The AUC can be interpreted as the probability that a randomly chosen positive instance has a higher predicted probability of belonging to the positive class than a randomly chosen negative instance. Therefore, higher values (closer to 1) indicate better performance.
 pred_all$score(msr("classif.mauc_aunp")) # AUNP: AUC of each class against the rest, using the a-priori class distribution. Computes the AUC treating a c-dimensional classifier as c two-dimensional 1-vs-rest classifiers, taking into account the prior probability of each class (Fawcett 2001).
 
-## plot per class ROC and compare probability thresholds between accuracy and false positive rate
 
 
